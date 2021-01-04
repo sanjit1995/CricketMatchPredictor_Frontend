@@ -20,8 +20,8 @@ class App extends React.Component {
     componentDidMount() {
         this.getLiveData();
         this.getPredData();
-        // setInterval(this.getLiveData, 5000)
-        // setInterval(this.getPredData, 10000)
+        setInterval(this.getLiveData, 5000)
+        setInterval(this.getPredData, 10000)
     }
 
     getLiveData = () => {
