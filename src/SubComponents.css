@@ -1,0 +1,252 @@
+img.header-item {
+    width: 60%;
+}
+
+div.header-item{
+    font-family: "Comic Sans MS";
+    font-size: 350%;
+    font-weight: 500;
+    color: maroon;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 10% auto;
+    grid-row: 1 / span 1;
+    width: 100%;
+}
+
+.header .header-item{
+    padding: 5px;
+    justify-self: center;
+    align-self: center;
+}
+
+.main-area{
+    display: grid;
+    grid-row: 2 / span 1;
+    background: white;
+    width: 100%;
+    border: 1px groove #f2f2f2;
+}
+
+.main-area .matches-area{
+    display: grid;
+    height: auto;
+    grid-row: auto;
+    border-right: 1px groove #f2f2f2;
+    border-bottom: 1px groove #f2f2f2;
+    background: whitesmoke;
+}
+
+.main-area .matches-area .match{
+    grid-column: 1 / span 1;
+    display: grid;
+    grid-template-rows: 30% 50% 20%;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-bottom: 1px groove #f2f2f2;
+}
+
+.match .match-details{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding-left: 5px;
+}
+
+.match .teams-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.match .status-details{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content:center;
+    row-gap: 5px;
+}
+
+.match .teams-details .team-details-inning{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    justify-items: center;
+}
+
+.match .teams-details .team-details-inning .team-details{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 30% auto;
+    align-items: center;
+    justify-items: left;
+}
+
+.main-area .matches-area .match-details .match-details-item .team-details-inning .team-flag{
+    width: 10px;
+    height: 5px;
+}
+
+.main-area .matches-area .match-details .match-details-item .team-details-inning .team-flag img{
+    max-width: 100%;
+    width: 10px;
+    height: 5px;
+}
+
+.match .status-details .status {
+    color: red;
+    font-weight: bold;
+}
+
+.match .status-details .status-text {
+    color: forestgreen;
+    font-weight: bold;
+}
+
+.match .match-details .venue-details {
+    font-family: Verdana;
+    font-weight: bold;
+}
+
+.match .match-details .tour-details {
+    font-style: italic;
+    font-family: "Malgun Gothic";
+}
+
+.match .teams-details .team-details-inning .team-details .team-inning {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.match .teams-details .team-details-inning .score-details {
+    font-size: x-large;
+}
+
+.main-area .pred-area{
+    grid-column: 2 / span 1;
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.main-area .pred-area .predictions{
+    display: grid;
+    grid-template-rows: 10% 65% 25%;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    border-bottom: 1px groove #f2f2f2;
+}
+
+.main-area .pred-area .predictions .match-pred {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    width: 100%;
+    height: 100%;
+    justify-items: center;
+    align-items: center;
+}
+
+.main-area .pred-area .match-pred .team-pred {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 40% auto;
+    align-items: center;
+    justify-items: center;
+    font-size: large;
+    font-weight: bold;
+    text-decoration-color: #2ECC71;
+}
+
+.main-area .pred-area .pred-text{
+    font-family: Verdana;
+    font-size: large;
+    align-self: center;
+    justify-self: center;
+    align-items: center;
+    text-decoration: underline;
+}
+
+.error-area{
+    padding-top: 15px;
+    justify-self: center;
+    font-family: "Segoe UI";
+    font-size: xx-large;
+}
+
+#batting-team{
+    color: #2ECC71;
+}
+
+#bowling-team{
+    color: #C13C37;
+}
+
+
+
+
+
+
+
+
+
+
+/*.main-area .date-area{*/
+/*    grid-row: 1 / span 1;*/
+/*    display: grid;*/
+/*    grid-template-columns: 43% auto 43%;*/
+/*    background: grey;*/
+/*}*/
+
+/*.date-area .date-val {*/
+/*    grid-column: 2 / span 1;*/
+/*    justify-self: center;*/
+/*    align-self: center;*/
+/*    font-family: "Droid Serif";*/
+/*    font-size: 150%;*/
+/*    font-weight: 800;*/
+/*    color: floralwhite;*/
+/*}*/
+
+/*.date-area .arrow-left{*/
+/*    display: inline-block;*/
+/*    grid-column: 1 / span 1;*/
+/*    justify-self: end;*/
+/*    align-self: center;*/
+/*    width: 20px;*/
+/*    height: 20px;*/
+/*    transition: 0.5s;*/
+/*    padding: 10px 10px;*/
+/*    box-shadow: -2px 2px 0 rgba(255,255,255,1);*/
+/*    transform: rotate(45deg);*/
+/*    cursor: pointer;*/
+/*}*/
+
+/*.date-area .arrow-left:hover{*/
+/*    box-shadow: -4px 4px 0 rgba(255,255,255,1.5);*/
+/*}*/
+
+/*.date-area .arrow-right{*/
+/*    display: inline-block;*/
+/*    grid-column: 3 / span 1;*/
+/*    justify-self: start;*/
+/*    align-self: center;*/
+/*    width: 20px;*/
+/*    height: 20px;*/
+/*    transition: 0.5s;*/
+/*    padding: 10px 10px;*/
+/*    box-shadow: -2px 2px 0 rgba(255,255,255,1);*/
+/*    transform: rotate(225deg);*/
+/*    cursor: pointer;*/
+/*}*/
+
+/*.date-area .arrow-right:hover{*/
+/*    box-shadow: -4px 4px 0 rgba(255,255,255,1.5);*/
+/*}*/
