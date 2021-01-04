@@ -25,7 +25,7 @@ class App extends React.Component {
     }
 
     getLiveData = () => {
-        fetch('http://https://cricketmatch-predictor-fastapi.herokuapp.com/getMatchData', {
+        fetch('https://cricketmatch-predictor-fastapi.herokuapp.com/getMatchData', {
             method: "GET",
             cache: "no-cache"
         }).then(response => {
@@ -48,7 +48,7 @@ class App extends React.Component {
     }
 
     getPredData = () => {
-        fetch('http://https://cricketmatch-predictor-fastapi.herokuapp.com/getPredData', {
+        fetch('https://cricketmatch-predictor-fastapi.herokuapp.com/getPredData', {
             method: "GET",
             cache: "no-cache"
         }).then(response => {
